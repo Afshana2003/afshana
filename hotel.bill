@@ -1,0 +1,60 @@
+import java.util.Scanner;
+public class ahhhh 
+{
+	public static void main(String[] args)
+	{
+		String s,e;
+		double h,gst,j,g,f,N,U,K,r;
+		Scanner input =new Scanner(System.in);
+		System.out.println("enter s1 no:");
+		s = input.next();
+		System.out.println("NAME  :");
+		e = input.next();
+		System.out.println("QTY  :");
+		f = input.nextDouble();
+		System.out.println("PRICE  :");
+		g = input.nextDouble();
+		h=f*g;
+		System.out.println("Enter CGST  :");
+		N = input.nextDouble();
+		System.out.println("Enter IGST :");
+		U = input.nextDouble();
+		System.out.println("Enter SGST  :");
+		K = input.nextDouble();	
+		N = h*N/100;
+		U = h*N/100;
+		g = h*N/100;
+		gst=h*N/100 + h*U/100 + h*K/100;
+	
+		System.out.println("Discount   :");
+		r = input.nextDouble();
+		j = (gst+h)-r;
+		
+		System.out.println("            SOCIAL KITECHEN ");
+		System.out.println("                     KOTTAYI");
+		System.out.println("=============================");
+		System.out.println("SL NO.           :         "+s);
+		System.out.println("NAME             :         "+e);
+		System.out.println("QTY              :         "+f);
+		System.out.println("PRICE            :         "+g);
+		System.out.println("================================ ");
+		System.out.println("TOTAL           :          "+h);
+		System.out.println("=================================");
+		System.out.println("CGST(10%)            :      "+N);
+		System.out.println("IGST(5%)             :      "+U);
+		System.out.println("SGST(8%)             :      "+K);
+		System.out.println("=============================== ");
+		System.out.println("GST              :      "+gst);
+		System.out.println("Discount          :        "+r);
+		System.out.println("Percentage       :         "+g);
+		System.out.println("================================");
+		System.out.println("GRANT TOTAL       :        "+j);
+		System.out.println("=============================");
+		System.out.println("        THANK YOU VISIT AGAIN");
+		System.out.println("=============================");
+		
+	
+		
+		
+	}
+}
